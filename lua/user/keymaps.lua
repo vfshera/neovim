@@ -16,7 +16,7 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 -- My Specific
 vim.keymap.set('n','<leader>q',":q<CR>")
 
- vim.keymap.set('n','<leader>e',':NvimTreeToggle<CR>')
+ vim.keymap.set('n','<leader>e',':NvimTreeToggle<CR>',{silent = true})
 
 -- See `:help telescope.builtin`
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
