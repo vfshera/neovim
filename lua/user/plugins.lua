@@ -26,7 +26,6 @@ require('packer').startup(function(use)
     },
   }
 
-use "akinsho/toggleterm.nvim"
 
   use { -- Autocompletion
     'hrsh7th/nvim-cmp',
@@ -44,6 +43,18 @@ use "akinsho/toggleterm.nvim"
     'nvim-treesitter/nvim-treesitter-textobjects',
     after = 'nvim-treesitter',
   }
+
+
+  -- Nvim-Tree
+
+use {
+  'nvim-tree/nvim-tree.lua',
+  requires = {
+    'nvim-tree/nvim-web-devicons', -- optional, for file icons
+  },
+  tag = 'nightly' -- optional, updated every week. (see issue #1193)
+}
+
 
   -- Git related plugins
   use 'tpope/vim-fugitive'
