@@ -1,11 +1,7 @@
-
-local opts = {noremap = true,silent = true}
-
-
-
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+local opts = {noremap = true,silent = true}
 -- See `:help vim.keymap.set()`
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
@@ -44,6 +40,6 @@ vim.keymap.set('n','<A-Up>','<C-w>k',opts)
 vim.keymap.set('n','<A-Right>','<C-w>l',opts)
 
 -- Move Text
-vim.keymap.set('n','<A-Up>',':m .+1<CR>==',opts)
-vim.keymap.set('n','<A-Down>',':m .-2<CR>==',opts)
+vim.keymap.set('n','<A-Down>',':m .+1<CR>==',opts)
+vim.keymap.set('n','<A-Up>',':m .-2<CR>==',opts)
 
